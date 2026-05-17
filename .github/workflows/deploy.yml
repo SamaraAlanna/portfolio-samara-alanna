@@ -14,5 +14,5 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /public_html/
+          server-dir: /home1/samar255/samara.com.br/samara/public_html/
           protocol: ftps
