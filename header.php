@@ -147,11 +147,18 @@
 
     function updateActive() {
       var current = '';
-      sections.forEach(function(section) {
-        if (window.scrollY >= section.offsetTop - 100) {
-          current = section.getAttribute('id');
-        }
-      });
+      var atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50;
+
+      if (atBottom && sections.length) {
+        current = sections[sections.length - 1].getAttribute('id');
+      } else {
+        sections.forEach(function(section) {
+          if (window.scrollY >= section.offsetTop - 100) {
+            current = section.getAttribute('id');
+          }
+        });
+      }
+
       navLinks.forEach(function(link) {
         link.classList.remove('active');
         if (link.getAttribute('href') === '#' + current) {
