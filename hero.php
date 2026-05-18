@@ -48,7 +48,7 @@
     padding: 0.38rem 1rem;
     font-size: 0.72rem;
     font-weight: 500;
-    color: var(--text-dim);
+    color: var(--accent);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
