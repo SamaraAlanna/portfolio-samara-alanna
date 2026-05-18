@@ -10,9 +10,28 @@
   .servico-card {
     background: var(--bg2); padding: 2rem;
     display: flex; flex-direction: column; gap: 1.1rem;
-    transition: background 0.2s; position: relative;
+    transition: background 0.25s, box-shadow 0.25s; position: relative; overflow: hidden;
   }
-  .servico-card:hover { background: var(--bg3); }
+  .servico-card::before {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(230,183,211,0.14) 0%, transparent 65%);
+    opacity: 0; transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .servico-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0; transition: opacity 0.25s;
+  }
+  .servico-card:hover { background: var(--bg3); box-shadow: 0 8px 32px rgba(230,183,211,0.08); }
+  .servico-card:hover::before { opacity: 1; }
+  .servico-card:hover::after { opacity: 1; }
   .servico-card.destaque { border: 1.5px solid var(--accent-border); }
   .servico-badge {
     position: absolute; top: 1.5rem; right: 1.5rem;

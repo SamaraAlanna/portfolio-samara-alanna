@@ -33,9 +33,30 @@
     background: var(--bg2);
     display: flex; flex-direction: column;
     text-decoration: none; overflow: hidden;
-    transition: background 0.25s;
+    transition: background 0.25s, box-shadow 0.25s;
+    position: relative;
   }
-  .project-card:hover { background: var(--bg3); }
+  .project-card::before {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(230,183,211,0.14) 0%, transparent 65%);
+    opacity: 0; transition: opacity 0.3s;
+    pointer-events: none; z-index: 0;
+  }
+  .project-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0; transition: opacity 0.25s;
+    z-index: 1;
+  }
+  .project-card:hover { background: var(--bg3); box-shadow: 0 8px 32px rgba(230,183,211,0.08); }
+  .project-card:hover::before { opacity: 1; }
+  .project-card:hover::after { opacity: 1; }
   .project-card:hover .proj-img img { transform: scale(1.04); }
   .project-card:hover .proj-arrow { opacity: 1; transform: translate(0,0); }
   .proj-img {

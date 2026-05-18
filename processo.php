@@ -6,8 +6,27 @@
     gap: 1px; background: var(--border);
     border: 0.5px solid var(--border); border-radius: var(--radius); overflow: hidden;
   }
-  .step { background: var(--bg2); padding: 2rem 1.5rem; transition: background 0.2s; }
-  .step:hover { background: var(--bg3); }
+  .step { background: var(--bg2); padding: 2rem 1.5rem; transition: background 0.25s, box-shadow 0.25s; position: relative; overflow: hidden; }
+  .step::before {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(230,183,211,0.14) 0%, transparent 65%);
+    opacity: 0; transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .step::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0; transition: opacity 0.25s;
+  }
+  .step:hover { background: var(--bg3); box-shadow: 0 8px 32px rgba(230,183,211,0.08); }
+  .step:hover::before { opacity: 1; }
+  .step:hover::after { opacity: 1; }
   .step-num { font-size: 1.75rem; font-weight: 800; color: rgba(230,183,211,0.12); line-height: 1; margin-bottom: 1.25rem; }
   .step h4 { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem; }
   .step p { font-size: 0.78rem; color: var(--text-dim); line-height: 1.65; }
