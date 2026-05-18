@@ -74,6 +74,7 @@
     display: flex; flex-wrap: wrap; gap: 0.35rem;
     padding-top: 0.85rem;
     border-top: 0.5px solid var(--border);
+    margin-top: auto;
   }
   .tag {
     background: var(--accent-dim);
