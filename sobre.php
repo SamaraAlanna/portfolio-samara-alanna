@@ -42,7 +42,7 @@
     flex-direction: column;
     gap: 0.85rem;
     min-height: 280px;
-    transition: background 0.2s;
+    transition: background 0.25s, box-shadow 0.25s;
     position: relative;
     overflow: hidden;
   }
@@ -50,13 +50,26 @@
     content: '';
     position: absolute;
     bottom: -40px; left: -40px;
-    width: 160px; height: 160px;
-    background: radial-gradient(circle, rgba(230,183,211,0.07) 0%, transparent 65%);
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(230,183,211,0.14) 0%, transparent 65%);
     opacity: 0; transition: opacity 0.3s;
     pointer-events: none;
   }
-  .area-card:hover { background: var(--bg3); }
+  .area-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .area-card:hover {
+    background: var(--bg3);
+    box-shadow: 0 8px 32px rgba(230,183,211,0.08);
+  }
   .area-card:hover::before { opacity: 1; }
+  .area-card:hover::after { opacity: 1; }
   .area-num { font-size: 0.68rem; color: var(--text-dim); letter-spacing: 0.06em; font-weight: 500; }
   .area-icon {
     width: 38px; height: 38px;
