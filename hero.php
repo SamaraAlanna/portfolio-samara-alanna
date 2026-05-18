@@ -120,7 +120,7 @@
 </style>
 
 <div class="hero-wrap">
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-badge">Disponível para projetos</div>
     <h1>Ter um site profissional é<br>mais simples do que parece.</h1>
     <p class="hero-desc">Sou a Samara Alanna, designer e desenvolvedora. Você me conta o que precisa e eu crio seu site — cuidando do visual, da experiência e de tudo que envolve o funcionamento.</p>

@@ -126,7 +126,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-logo">Samara Alanna</a>
+    <a href="#hero" class="nav-logo">Samara Alanna</a>
     <ul class="nav-links">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#projetos">Projetos</a></li>
