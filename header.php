@@ -29,6 +29,7 @@
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
+    padding-top: 64px;
   }
 
   .container {
@@ -38,13 +39,16 @@
   }
 
   nav {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     background: rgba(12,12,11,0.88);
     backdrop-filter: blur(14px);
     border-bottom: 0.5px solid var(--border);
   }
+
   .nav-inner {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -53,6 +57,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .nav-logo {
     font-weight: 600;
     font-size: 1rem;
@@ -60,6 +65,7 @@
     text-decoration: none;
     letter-spacing: -0.01em;
   }
+
   .nav-links {
     display: flex;
     gap: 2.5rem;
@@ -73,7 +79,9 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--text); }
+
   .nav-cta {
+    position: relative;
     background: var(--accent);
     color: #1a1018;
     font-family: var(--font);
@@ -90,25 +98,27 @@
   .nav-cta:hover { opacity: 0.82; }
   .nav-cta svg { width: 15px; height: 15px; flex-shrink: 0; }
 
+  /* Feixe de luz abaixo do botão vamos conversar */
+  .nav-cta::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(ellipse at center top,
+      rgba(230,183,211,0.20) 0%,
+      rgba(230,183,211,0.08) 40%,
+      transparent 70%
+    );
+    pointer-events: none;
+    z-index: -1;
+  }
+
   @media (max-width: 960px) {
     .nav-links { display: none; }
   }
-
-  nav::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 80px;
-  background: radial-gradient(ellipse at center top,
-    rgba(230,183,211,0.12) 0%,
-    transparent 70%
-  );
-  pointer-events: none;
-}
-nav { position: relative; }
 </style>
 
 <nav>

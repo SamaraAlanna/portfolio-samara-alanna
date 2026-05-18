@@ -5,23 +5,23 @@
     overflow: hidden;
   }
 
-  /* Feixe horizontal na parte de baixo da hero */
+  /* Feixe elipse horizontal na base da hero */
   .hero-wrap::after {
     content: '';
     position: absolute;
-    bottom: -200px;
+    bottom: -220px;
     left: 50%;
     transform: translateX(-50%);
-    width: 140%;
-    height: 500px;
+    width: 150%;
+    height: 520px;
     border-radius: 50%;
     background: radial-gradient(ellipse at center,
-      rgba(180, 70, 130, 0.50) 0%,
-      rgba(210, 120, 170, 0.28) 35%,
-      rgba(230, 183, 211, 0.10) 60%,
+      rgba(230, 183, 211, 0.45) 0%,
+      rgba(230, 183, 211, 0.22) 35%,
+      rgba(230, 183, 211, 0.07) 60%,
       transparent 75%
     );
-    filter: blur(80px);
+    filter: blur(70px);
     pointer-events: none;
     z-index: 0;
   }
@@ -38,8 +38,6 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-
-  .hero > * { position: relative; z-index: 1; }
 
   .hero-badge {
     display: inline-flex;
