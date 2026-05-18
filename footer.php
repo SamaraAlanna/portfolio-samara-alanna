@@ -25,13 +25,35 @@
 </footer>
 
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+function smoothScrollTo(target, duration) {
+  var navHeight = document.querySelector('nav').offsetHeight;
+  var targetPos = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+  var startPos = window.pageYOffset;
+  var distance = targetPos - startPos;
+  var startTime = null;
+
+  function step(currentTime) {
+    if (!startTime) startTime = currentTime;
+    var elapsed = currentTime - startTime;
+    var progress = Math.min(elapsed / duration, 1);
+    var ease = progress < 0.5
+      ? 4 * progress * progress * progress
+      : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+    window.scrollTo(0, startPos + distance * ease);
+    if (elapsed < duration) requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   anchor.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
+    var href = this.getAttribute('href');
     if (href === '#') return;
+    var target = document.querySelector(href);
+    if (!target) return;
     e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    smoothScrollTo(target, 700);
   });
 });
 </script>
