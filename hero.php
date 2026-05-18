@@ -1,35 +1,42 @@
 <style>
-  .hero {
+  .hero-wrap {
     position: relative;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem 2.5rem 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
     overflow: hidden;
   }
 
-  /* Glow — círculo grande posicionado abaixo, só a borda superior aparece */
-  .hero::after {
+  /* Feixe horizontal na parte de baixo da hero */
+  .hero-wrap::after {
     content: '';
     position: absolute;
-    bottom: -420px;
+    bottom: -200px;
     left: 50%;
     transform: translateX(-50%);
-    width: 900px;
-    height: 900px;
+    width: 140%;
+    height: 500px;
     border-radius: 50%;
-    background: radial-gradient(circle,
-      rgba(180, 80, 140, 0.55) 0%,
-      rgba(210, 130, 180, 0.30) 35%,
-      rgba(230, 183, 211, 0.12) 60%,
+    background: radial-gradient(ellipse at center,
+      rgba(180, 70, 130, 0.50) 0%,
+      rgba(210, 120, 170, 0.28) 35%,
+      rgba(230, 183, 211, 0.10) 60%,
       transparent 75%
     );
-    filter: blur(60px);
+    filter: blur(80px);
     pointer-events: none;
     z-index: 0;
+  }
+
+  .hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .hero > * { position: relative; z-index: 1; }
@@ -111,12 +118,14 @@
   .btn-ghost:hover { color: var(--text); border-color: rgba(230,183,211,0.3); }
 </style>
 
-<section class="hero">
-  <div class="hero-badge">Disponível para projetos</div>
-  <h1>Ter um site profissional é mais simples do que parece.</h1>
-  <p class="hero-desc">Sou a Samara Alanna, designer e desenvolvedora. Você me conta o que precisa e eu crio seu site — cuidando do visual, da experiência e de tudo que envolve o funcionamento.</p>
-  <div class="hero-actions">
-    <a href="#servicos" class="btn-primary">Conhecer serviços</a>
-    <a href="#projetos" class="btn-ghost">Ver projetos</a>
-  </div>
-</section>
+<div class="hero-wrap">
+  <section class="hero">
+    <div class="hero-badge">Disponível para projetos</div>
+    <h1>Ter um site profissional é mais simples do que parece.</h1>
+    <p class="hero-desc">Sou a Samara Alanna, designer e desenvolvedora. Você me conta o que precisa e eu crio seu site — cuidando do visual, da experiência e de tudo que envolve o funcionamento.</p>
+    <div class="hero-actions">
+      <a href="#servicos" class="btn-primary">Conhecer serviços</a>
+      <a href="#projetos" class="btn-ghost">Ver projetos</a>
+    </div>
+  </section>
+</div>

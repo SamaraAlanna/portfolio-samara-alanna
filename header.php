@@ -93,6 +93,22 @@
   @media (max-width: 960px) {
     .nav-links { display: none; }
   }
+
+  nav::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 80px;
+  background: radial-gradient(ellipse at center top,
+    rgba(230,183,211,0.12) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+nav { position: relative; }
 </style>
 
 <nav>
