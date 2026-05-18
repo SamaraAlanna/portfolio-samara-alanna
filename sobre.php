@@ -95,8 +95,8 @@
     <div class="section-label">Sobre mim</div>
     <div class="sobre-text">
       <h2 class="section-title">Do briefing ao produto final</h2>
-      <p>Sou uma profissional multidisciplinar que transita com fluência entre design e código. Acredito que a melhor interface é aquela que o usuário nem percebe — ela simplesmente funciona.</p>
-      <p>Minha abordagem une pensamento estratégico de UX, olhar crítico de UI e a precisão técnica do desenvolvimento web. O resultado? Produtos digitais coesos, escaláveis e memoráveis.</p>
+      <p>Sou uma profissional multidisciplinar que transita com fluência entre design e código.<br>Acredito que a melhor interface é aquela que o usuário nem percebe — ela simplesmente funciona.</p>
+      <p>Minha abordagem une pensamento estratégico de UX, olhar crítico de UI e a precisão técnica do desenvolvimento web.<br>O resultado? Produtos digitais coesos, escaláveis e memoráveis.</p>
     </div>
     <div class="areas-grid">
       <div class="area-card">
