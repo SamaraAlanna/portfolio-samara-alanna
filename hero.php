@@ -5,24 +5,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 6rem 2.5rem 5rem;
-    max-width: var(--max-width);
+    padding: 4rem 2.5rem 3rem;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
   }
   .hero::after {
     content: '';
     position: absolute;
-    bottom: -80px;
+    bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1100px;
-    height: 520px;
+    width: 120%;
+    height: 600px;
     background: radial-gradient(ellipse at center bottom,
-      rgba(180,100,150,0.28) 0%,
-      rgba(230,183,211,0.14) 30%,
-      rgba(150,80,130,0.05) 60%,
-      transparent 75%
+      rgba(200, 80, 140, 0.45) 0%,
+      rgba(230, 183, 211, 0.25) 25%,
+      rgba(180, 80, 150, 0.10) 55%,
+      transparent 72%
     );
     pointer-events: none;
     z-index: 0;
