@@ -2,16 +2,40 @@
   .servicos { padding: 6rem 0; border-bottom: 0.5px solid var(--border); }
   .servicos-header { margin-bottom: 3rem; }
   .servicos-header p { font-size: 0.95rem; color: var(--text-muted); max-width: 440px; line-height: 1.7; margin-top: 0.75rem; }
+  .servicos-carousel-wrapper { position: relative; }
   .servicos-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 1px; background: var(--border);
-    border: 0.5px solid var(--border); border-radius: var(--radius); overflow: hidden;
+    display: flex;
+    gap: 1px;
+    background: var(--border);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
+  .servicos-grid::-webkit-scrollbar { display: none; }
   .servico-card {
+    flex: 0 0 calc(33.333% - 1px);
+    scroll-snap-align: start;
     background: var(--bg2); padding: 2rem;
     display: flex; flex-direction: column; gap: 1.1rem;
     transition: background 0.25s, box-shadow 0.25s; position: relative; overflow: hidden;
   }
+  .carousel-nav {
+    display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1.25rem;
+  }
+  .carousel-btn {
+    background: var(--bg2); border: 0.5px solid var(--border); border-radius: 99px;
+    color: var(--text-muted); width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 1rem; transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .carousel-btn:hover { background: var(--bg3); color: var(--text); border-color: var(--border-hover); }
+
+  @media (max-width: 960px) { .servico-card { flex: 0 0 calc(50% - 1px); } }
+  @media (max-width: 600px) { .servico-card { flex: 0 0 88%; } }
   .servico-card::before {
     content: '';
     position: absolute;
@@ -66,7 +90,6 @@
   }
   .btn-servico:hover { opacity: 0.82; }
 
-  @media (max-width: 960px) { .servicos-grid { grid-template-columns: 1fr; } }
 </style>
 
 <section class="servicos" id="servicos">
@@ -76,6 +99,7 @@
       <h2 class="section-title">O que posso fazer pelo seu negócio</h2>
       <p>Cada projeto é feito do zero, com atenção ao visual, à experiência e ao que realmente importa para o seu cliente.</p>
     </div>
+    <div class="servicos-carousel-wrapper">
     <div class="servicos-grid">
 
       <div class="servico-card">
@@ -149,5 +173,24 @@
       </div>
 
     </div>
+    <div class="carousel-nav">
+      <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
+      <button class="carousel-btn" id="srv-next" aria-label="Próximo">&#8594;</button>
+    </div>
+    </div>
   </div>
 </section>
+
+<script>
+(function() {
+  var grid = document.querySelector('.servicos-grid');
+  document.getElementById('srv-prev').addEventListener('click', function() {
+    var card = grid.querySelector('.servico-card');
+    grid.scrollBy({ left: -(card.offsetWidth + 1), behavior: 'smooth' });
+  });
+  document.getElementById('srv-next').addEventListener('click', function() {
+    var card = grid.querySelector('.servico-card');
+    grid.scrollBy({ left: card.offsetWidth + 1, behavior: 'smooth' });
+  });
+})();
+</script>
