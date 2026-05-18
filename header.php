@@ -20,7 +20,8 @@
     --max-width:     1200px;
   }
 
-  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  html, body { scroll-behavior: smooth; }
+  html { scroll-padding-top: 64px; }
   section[id] { scroll-margin-top: 64px; }
 
   body {
@@ -30,6 +31,7 @@
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
+    scroll-padding-top: 64px;
     padding-top: 64px;
   }
 
