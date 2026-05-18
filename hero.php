@@ -1,7 +1,7 @@
 <style>
   .hero-wrap {
     position: relative;
-    min-height: 100vh;
+    min-height: 85vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -39,6 +39,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    min-height: 85vh;
   }
 
   .hero-badge {

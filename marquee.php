@@ -4,6 +4,8 @@
     overflow: hidden;
     padding: 0.9rem 0;
     background: var(--bg2);
+    position: relative;
+    z-index: 1;
   }
   .marquee-track {
     display: flex;
