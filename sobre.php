@@ -18,7 +18,16 @@
     border-bottom: 0.5px solid var(--border);
   }
   .sobre-text { margin-bottom: 3rem; }
-  .sobre-text h2 { margin-bottom: 1.5rem; }
+  .sobre-title-row { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.5rem; }
+  .btn-cv {
+    display: inline-flex; align-items: center; gap: 0.45rem; flex-shrink: 0;
+    background: var(--accent); color: #1a1018;
+    font-family: var(--font); font-size: 0.82rem; font-weight: 600;
+    padding: 0.6rem 1.35rem; border-radius: 99px;
+    text-decoration: none; transition: opacity 0.2s, transform 0.2s;
+  }
+  .btn-cv:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn-cv svg { width: 14px; height: 14px; flex-shrink: 0; }
   .sobre-text p {
     font-size: 0.95rem;
     color: var(--text-muted);
@@ -108,7 +117,13 @@
   <div class="container">
     <div class="section-label">Sobre mim</div>
     <div class="sobre-text">
-      <h2 class="section-title">Do briefing ao produto final</h2>
+      <div class="sobre-title-row">
+        <h2 class="section-title">Do briefing ao produto final</h2>
+        <a href="#" class="btn-cv">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
       <p>Sou uma profissional multidisciplinar que transita com fluência entre design e código. Acredito que a melhor interface é aquela que o usuário nem percebe — ela simplesmente funciona.</p>
       <p>Minha abordagem une pensamento estratégico de UX, olhar crítico de UI e a precisão técnica do desenvolvimento web. O resultado? Produtos digitais coesos, escaláveis e memoráveis.</p>
     </div>
