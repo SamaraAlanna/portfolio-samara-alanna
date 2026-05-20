@@ -1,24 +1,80 @@
 <style>
-  .cta { padding: 8rem 2.5rem; min-height: calc(100vh - 64px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; }
+  .cta {
+    padding: 8rem 2.5rem;
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
   .cta::before {
-    content: ''; position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%);
-    width: 600px; height: 350px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    width: 500px;
+    height: 300px;
     background: radial-gradient(ellipse, rgba(230,183,211,0.10) 0%, rgba(230,183,211,0.03) 50%, transparent 70%);
     pointer-events: none;
   }
-  .cta-eyebrow { font-size: 0.7rem; font-weight: 500; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem; }
-  .cta h2 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; margin-bottom: 1.5rem; max-width: 580px; margin-left: auto; margin-right: auto; }
-  .cta p { color: var(--text-muted); max-width: 400px; margin: 0 auto 2.5rem; font-size: 0.98rem; }
-  .cta-actions { display: flex; justify-content: center; align-items: center; gap: 1.25rem; }
+  .cta-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .cta h2 {
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+  }
+  .cta p {
+    color: var(--text-muted);
+    max-width: 400px;
+    margin: 0 auto 2.5rem;
+    font-size: 0.98rem;
+  }
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }
   .btn-cta {
-    background: var(--accent); color: #1a1018;
-    font-size: 0.9rem; font-weight: 500;
-    padding: 0.9rem 2rem; border-radius: 99px;
-    text-decoration: none; display: flex; align-items: center; gap: 0.5rem;
+    background: var(--accent);
+    color: #1a1018;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.9rem 2rem;
+    border-radius: 99px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     transition: opacity 0.2s, transform 0.2s;
   }
-  .btn-cta:hover { opacity: 0.85; transform: translateY(-1px); }
-  .btn-cta svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .btn-cta:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+  .btn-cta svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
 </style>
 
 <section class="cta" id="contato">
