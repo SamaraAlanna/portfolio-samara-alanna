@@ -13,10 +13,10 @@
   .cta::before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: calc(50% + 5.5rem);
     bottom: auto;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -50%);
     width: 500px;
     height: 300px;
     background: radial-gradient(ellipse, rgba(230,183,211,0.10) 0%, rgba(230,183,211,0.03) 50%, transparent 70%);
