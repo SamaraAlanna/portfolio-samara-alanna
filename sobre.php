@@ -177,7 +177,7 @@
 
   .area-tags {
     display: flex;
-    height: 56px;
+    height: 80px;
     overflow: hidden;
     flex-wrap: wrap;
     align-content: flex-start;
