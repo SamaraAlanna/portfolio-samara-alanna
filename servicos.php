@@ -6,6 +6,7 @@
   .servicos .container {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    overflow: visible;
   }
 
   .servicos-header {
@@ -37,8 +38,10 @@
 
   .servicos-carousel-wrapper {
     position: relative;
-    padding-left: 56px;
-    padding-right: 56px;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .servicos-grid {
@@ -305,7 +308,7 @@
 
   #srv-prev {
     position: absolute;
-    left: 0;
+    left: -44px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
@@ -313,7 +316,7 @@
 
   #srv-next {
     position: absolute;
-    right: 0;
+    right: -44px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
