@@ -179,7 +179,7 @@
   @media (max-width: 960px) {
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
     .section-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-    .proj-tag { background: var(--accent-dim); border: 0.5px solid var(--accent-border); border-radius: 99px; padding: 0.18rem 0.6rem; font-size: var(--text-xs); color: var(--accent); }
+    .proj-tag { background: var(--accent-dim); border: 0.5px solid var(--accent-border); border-radius: 99px; padding: 0.18rem 0.6rem; font-size: var(--text-xs); color: var(--text-dim); }
   }
   @media (max-width: 600px) { .projects-grid { grid-template-columns: 1fr; } }
 </style>
