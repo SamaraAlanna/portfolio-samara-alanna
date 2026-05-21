@@ -17,14 +17,14 @@
   }
 
   .servicos-carousel-wrapper {
-    position: relative;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: 1rem;
   }
 
   .servicos-grid {
     flex: 1;
+    min-width: 0;
     display: flex;
     gap: 1px;
     background: var(--border);
@@ -42,7 +42,7 @@
     flex: 0 0 calc(33.333% - 1px);
     scroll-snap-align: start;
     background: var(--bg2);
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,6 +84,7 @@
     justify-content: center;
     color: var(--accent);
     flex-shrink: 0;
+    margin-bottom: 1rem;
   }
   .servico-icon svg { width: 16px; height: 16px; }
 
@@ -104,21 +105,23 @@
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
-    margin: 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .servico-card > p {
     font-size: 0.82rem;
     color: var(--text-muted);
     line-height: 1.7;
-    margin: 0;
+    margin: 0 0 1.5rem 0;
   }
 
   .card-acc {
     border: 0.5px solid var(--border);
     border-radius: var(--radius-sm);
     overflow: hidden;
+    margin-bottom: 0.5rem;
   }
+  .card-acc:last-of-type { margin-bottom: 0; }
 
   .card-acc-trigger {
     width: 100%;
@@ -339,7 +342,7 @@
             <div>
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$400</div>
-              <div class="servico-prazo">Prazo: <strong>10 a 14 dias úteis</strong></div>
+              <div class="servico-prazo">Prazo: 10–14 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
@@ -386,7 +389,7 @@
             <div>
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$800</div>
-              <div class="servico-prazo">Prazo: <strong>7 a 10 dias úteis</strong></div>
+              <div class="servico-prazo">Prazo: 7–10 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
@@ -432,7 +435,7 @@
             <div>
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$1.200</div>
-              <div class="servico-prazo">Prazo: <strong>15 a 20 dias úteis</strong></div>
+              <div class="servico-prazo">Prazo: 15–20 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
@@ -480,7 +483,7 @@
             <div>
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$4.000</div>
-              <div class="servico-prazo">Prazo: <strong>30 a 45 dias úteis</strong></div>
+              <div class="servico-prazo">Prazo: 30–45 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
@@ -528,7 +531,7 @@
             <div>
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$6.000</div>
-              <div class="servico-prazo">Prazo: <strong>30 a 60 dias úteis</strong></div>
+              <div class="servico-prazo">Prazo: 30–60 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
