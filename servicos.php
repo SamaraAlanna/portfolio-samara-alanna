@@ -397,6 +397,33 @@
         </div>
       </div>
 
+      <div class="servico-card">
+        <div class="servico-icon">◇</div>
+        <h3>Site Acessível</h3>
+        <p>Um site profissional e funcional, desenvolvido em plataforma visual. A solução ideal para quem quer estar online com qualidade sem precisar de um grande investimento.</p>
+        <div class="servico-includes">
+          <div class="servico-includes-label">O que está incluso</div>
+          <div class="include-item"><div class="include-dot"></div>Design personalizado na plataforma</div>
+          <div class="include-item"><div class="include-dot"></div>WordPress + Elementor, Shopify ou Nuvemshop</div>
+          <div class="include-item"><div class="include-dot"></div>Responsivo</div>
+          <div class="include-item"><div class="include-dot"></div>Integração com WhatsApp e redes sociais</div>
+          <div class="include-item"><div class="include-dot"></div>SEO básico</div>
+          <div class="include-item"><div class="include-dot"></div>Ajustes<span class="rosa">ilimitados</span></div>
+          <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
+          <div class="include-item"><div class="include-dot"></div>Pequenos negócios</div>
+          <div class="include-item"><div class="include-dot"></div>Pequenos empreendedores</div>
+          <div class="include-item"><div class="include-dot"></div>Quem está começando</div>
+        </div>
+        <div class="servico-footer">
+          <div>
+            <div class="servico-price-label">A partir de</div>
+            <div class="servico-price">R$800</div>
+            <div class="servico-prazo">Prazo: <strong>7 a 10 dias úteis</strong></div>
+          </div>
+          <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
+        </div>
+      </div>
+
     </div>
     </div>
   </div>
