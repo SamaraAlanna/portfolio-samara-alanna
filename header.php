@@ -130,7 +130,6 @@
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#metodologia">Metodologia</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
     <a href="https://wa.me/5541920058670" class="nav-cta" target="_blank">

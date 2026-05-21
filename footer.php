@@ -85,9 +85,11 @@ function smoothScrollTo(target, duration, center) {
     '.servico-card::before{top:0!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;height:100%!important;background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.2) 0%,transparent 65%)!important}' +
     '.project-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.12) 0%,transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none;z-index:0}' +
     '.project-card:hover::before{opacity:1}' +
-    /* Corner glows */
-    '.bg-glow{position:absolute;pointer-events:none;z-index:0;width:560px;height:460px;border-radius:50%;filter:blur(90px);background:radial-gradient(ellipse,rgba(230,183,211,.28) 0%,rgba(230,183,211,.08) 45%,transparent 70%);animation:glow-drift 9s ease-in-out infinite}' +
-    '@keyframes glow-drift{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}' +
+    /* Gradient text nos labels */
+    '.section-label{background:linear-gradient(90deg,var(--accent) 0%,rgba(230,183,211,.5) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}' +
+    /* Section entry lines */
+    '.sec-line{display:block;height:1px;width:0%;background:linear-gradient(90deg,transparent,rgba(230,183,211,.28) 50%,transparent);transition:width 1.4s cubic-bezier(.16,1,.3,1)}' +
+    '.sec-line.in-view{width:100%}' +
     /* Floating WhatsApp button */
     '.fab-wa{position:fixed;bottom:1.75rem;right:1.75rem;z-index:1000;display:flex;align-items:center;gap:.55rem;background:var(--bg2);border:1px solid var(--accent-border);color:var(--accent);padding:.7rem 1.3rem .7rem 1rem;border-radius:99px;text-decoration:none;font-family:var(--font);font-size:.85rem;font-weight:500;box-shadow:0 4px 24px rgba(230,183,211,.13);animation:fabIn .7s cubic-bezier(.16,1,.3,1) 1.5s both;transition:transform .2s,box-shadow .2s,background .2s}' +
     '.fab-wa:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 8px 32px rgba(230,183,211,.24);background:var(--bg3)}' +
@@ -144,13 +146,20 @@ function smoothScrollTo(target, duration, center) {
     el.style.transitionDelay = (idx * 110) + 'ms';
   });
 
+  /* ── Section entry lines ── */
+  document.querySelectorAll('.sobre, .projetos, .servicos, .cta').forEach(function (sec) {
+    var line = document.createElement('span');
+    line.className = 'sec-line';
+    sec.insertBefore(line, sec.firstChild);
+  });
+
   /* ── IntersectionObserver ── */
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); }
     });
   }, { threshold: 0.07, rootMargin: '0px 0px -20px 0px' });
-  document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  document.querySelectorAll('.reveal, .sec-line').forEach(function (el) { obs.observe(el); });
 
   /* ── 3D tilt em cards ── */
   document.querySelectorAll('.area-card, .project-card').forEach(function (card) {
@@ -176,29 +185,33 @@ function smoothScrollTo(target, duration, center) {
     });
   });
 
-  /* ── Corner glows nas seções ── */
-  [
-    { sel: '.sobre',    top: '0',    right: '0',  delay: '0s'    },
-    { sel: '.projetos', top: '0',    left: '0',   delay: '-3s'   },
-    { sel: '.servicos', bottom: '0', right: '0',  delay: '-5.5s' },
-    { sel: '.processo', top: '0',    left: '0',   delay: '-2s'   },
-  ].forEach(function (def) {
-    var sec = document.querySelector(def.sel);
-    if (!sec) return;
-    sec.style.position = 'relative';
-    sec.style.overflow = 'hidden';
-    var ct = sec.querySelector('.container');
-    if (ct) { ct.style.position = 'relative'; ct.style.zIndex = '1'; }
-    var g = document.createElement('div');
-    g.className = 'bg-glow';
-    var css = 'animation-delay:' + def.delay + ';';
-    if (def.top    !== undefined) css += 'top:'    + def.top    + ';';
-    if (def.right  !== undefined) css += 'right:'  + def.right  + ';';
-    if (def.bottom !== undefined) css += 'bottom:' + def.bottom + ';';
-    if (def.left   !== undefined) css += 'left:'   + def.left   + ';';
-    g.style.cssText = css;
-    sec.insertBefore(g, sec.firstChild);
-  });
+  /* ── Grain texture ── */
+  var gc = document.createElement('canvas');
+  gc.width = gc.height = 256;
+  var gctx = gc.getContext('2d');
+  var gimg = gctx.createImageData(256, 256);
+  for (var gi = 0; gi < gimg.data.length; gi += 4) {
+    var gv = Math.floor(Math.random() * 255);
+    gimg.data[gi] = gimg.data[gi+1] = gimg.data[gi+2] = gv;
+    gimg.data[gi+3] = 255;
+  }
+  gctx.putImageData(gimg, 0, 0);
+  var grain = document.createElement('div');
+  grain.style.cssText = 'position:fixed;inset:0;z-index:9996;pointer-events:none;mix-blend-mode:soft-light;opacity:0.04;background:url(' + gc.toDataURL() + ') repeat;background-size:256px 256px';
+  document.body.appendChild(grain);
+
+  /* ── Ambient drifting glow ── */
+  var amb = document.createElement('div');
+  amb.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:0;mix-blend-mode:overlay';
+  document.body.appendChild(amb);
+  var at = 0;
+  (function driftAmb() {
+    at += 0.003;
+    var ax = 50 + Math.sin(at) * 20;
+    var ay = 50 + Math.cos(at * 0.75) * 18;
+    amb.style.background = 'radial-gradient(ellipse at ' + ax.toFixed(1) + '% ' + ay.toFixed(1) + '%, rgba(230,183,211,.11) 0%, transparent 55%)';
+    requestAnimationFrame(driftAmb);
+  })();
 
   /* ── Botão flutuante WhatsApp ── */
   var fab = document.createElement('a');

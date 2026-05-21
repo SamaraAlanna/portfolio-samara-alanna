@@ -13,7 +13,6 @@
 <?php include 'sobre.php'; ?>
 <?php include 'projetos.php'; ?>
 <?php include 'servicos.php'; ?>
-<?php include 'processo.php'; ?>
 <?php include 'cta.php'; ?>
 <?php include 'footer.php'; ?>
 
