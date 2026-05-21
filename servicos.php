@@ -266,7 +266,9 @@
     <div class="servicos-header">
       <div class="section-label">Serviços</div>
       <h2 class="section-title">O que posso fazer pelo seu negócio</h2>
-      <p>Cada projeto é feito do zero, com atenção ao visual, à experiência e ao que realmente importa para o seu cliente.</p>
+      <p>Cada projeto é desenvolvido de forma personalizada, pensando no visual, na experiência e no que realmente faz sentido para o seu negócio.
+      
+      Para isso, começamos pelo briefing — um documento que serve como guia para o projeto. Nele você pode compartilhar suas ideias, referências e objetivos. E se ainda não tiver tudo definido, nós construímos esse direcionamento juntos.</p>
     </div>
     <div class="servicos-carousel-wrapper">
       <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
@@ -277,7 +279,8 @@
         <div class="servico-badge">Mais pedido</div>
         <div class="servico-icon">✦</div>
         <h3>Identidade Visual</h3>
-        <p>Sua marca com personalidade própria. Crio uma identidade visual completa que representa quem você é.</p>
+        <p>Se a sua marca não transmite valor visualmente, dificilmente ela será lembrada.
+          A identidade visual é responsável por dar personalidade, consistência e reconhecimento para a sua marca — seja em sites, redes sociais ou qualquer outro ponto de contato com o público.</p>
         <div class="servico-includes">
           <div class="servico-includes-label">O que está incluso</div>
           <div class="include-item"><div class="include-dot"></div>Logotipo</div>
@@ -288,6 +291,11 @@
           <div class="include-item"><div class="include-dot"></div>Manual de marca</div>
           <div class="include-item"><div class="include-dot"></div>Arquivos em AI, PDF e PNG</div>
           <div class="include-item"><div class="include-dot"></div>Ajustes e revisões ilimitadas</div>
+          <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
+          <div class="include-item"><div class="include-dot"></div>Marcas</div>
+          <div class="include-item"><div class="include-dot"></div>Empresas</div>
+          <div class="include-item"><div class="include-dot"></div>Profissionais autônomos</div>
+          <div class="include-item"><div class="include-dot"></div>Marcas pessoais</div>
         </div>
         <div class="servico-footer">
           <div>
@@ -310,6 +318,11 @@
           <div class="include-item"><div class="include-dot"></div>Responsivo para mobile e desktop</div>
           <div class="include-item"><div class="include-dot"></div>Formulário de contato integrado</div>
           <div class="include-item"><div class="include-dot"></div>1 rodada de ajustes inclusa</div>
+          <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
+          <div class="include-item"><div class="include-dot"></div>Marcas</div>
+          <div class="include-item"><div class="include-dot"></div>Empresas</div>
+          <div class="include-item"><div class="include-dot"></div>Profissionais autônomos</div>
+          <div class="include-item"><div class="include-dot"></div>Marcas pessoais</div>
         </div>
         <div class="servico-footer">
           <div>
@@ -332,6 +345,11 @@
           <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
           <div class="include-item"><div class="include-dot"></div>Responsivo para todos os dispositivos</div>
           <div class="include-item"><div class="include-dot"></div>2 rodadas de ajustes inclusas</div>
+          <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
+          <div class="include-item"><div class="include-dot"></div>Marcas</div>
+          <div class="include-item"><div class="include-dot"></div>Empresas</div>
+          <div class="include-item"><div class="include-dot"></div>Profissionais autônomos</div>
+          <div class="include-item"><div class="include-dot"></div>Marcas pessoais</div>
         </div>
         <div class="servico-footer">
           <div>
