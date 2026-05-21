@@ -182,6 +182,7 @@
     padding-top: 0.85rem;
     border-top: 0.5px solid var(--border);
     margin-top: 1.5rem;
+    min-height: 60px;
   }
 
   .tag {
