@@ -168,7 +168,7 @@
   }
 
   .area-card p {
-    font-size: 0.8rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
     font-weight: 400;
     line-height: 1.65;
@@ -192,8 +192,8 @@
     border: 0.5px solid var(--border);
     border-radius: 99px;
     padding: 0.18rem 0.6rem;
-    font-size: 0.67rem;
-    color: var(--text-dim);
+    font-size: 0.75rem;
+    color: var(--text-muted);
     transition: border-color 0.2s, color 0.2s;
   }
 

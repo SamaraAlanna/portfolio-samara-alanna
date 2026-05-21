@@ -113,7 +113,7 @@
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
     padding: 0.18rem 0.65rem;
-    font-size: 0.67rem;
+    font-size: 0.72rem;
     font-weight: 500;
     color: var(--accent);
     letter-spacing: 0.04em;
@@ -140,7 +140,7 @@
   }
 
   .servico-card > p {
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
     line-height: 1.7;
     margin: 0 0 1.5rem 0;
@@ -178,7 +178,7 @@
   }
 
   .card-acc-label {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: var(--text-dim);
     letter-spacing: 0.08em;
@@ -215,7 +215,7 @@
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     line-height: 1.4;
   }
@@ -243,7 +243,7 @@
   }
 
   .servico-price-label {
-    font-size: 0.67rem;
+    font-size: 0.72rem;
     color: var(--text-dim);
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -259,7 +259,7 @@
   }
 
   .servico-prazo {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: var(--text-dim);
     margin-top: 0.2rem;
   }

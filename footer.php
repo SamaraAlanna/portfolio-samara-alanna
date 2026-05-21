@@ -14,7 +14,7 @@
   }
 
   .footer-copy {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: var(--text-dim);
   }
 
@@ -24,7 +24,7 @@
   }
 
   .footer-links a {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: var(--text-dim);
     text-decoration: none;
     transition: color 0.2s;
