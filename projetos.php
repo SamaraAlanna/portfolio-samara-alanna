@@ -110,9 +110,10 @@
     background: var(--accent-dim);
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
-    padding: 0.18rem 0.65rem;
+    padding: 0.18rem 0.6rem;
     font-size: var(--text-xs);
     color: var(--accent);
+    letter-spacing: 0.03em;
   }
 
   .proj-num {
@@ -152,15 +153,19 @@
   }
 
   .tool-tag {
-    font-size: 0.65rem;
-    color: var(--text-dim);
+    background: var(--accent-dim);
     border: 0.5px solid var(--border);
     border-radius: 99px;
-    padding: 0.15rem 0.55rem;
+    padding: 0.18rem 0.6rem;
+    font-size: var(--text-xs);
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
     transition: border-color 0.2s, color 0.2s;
   }
-
-  .project-card:hover .tool-tag { border-color: rgba(230,183,211,0.15); color: var(--text-muted); }
+  .project-card:hover .tool-tag {
+    border-color: var(--accent-border);
+    color: var(--accent);
+  }
 
   .proj-arrow {
     font-size: var(--text-base);

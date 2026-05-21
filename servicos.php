@@ -36,6 +36,14 @@
   }
   .btn-quiz-header:hover { opacity: 0.82; }
 
+  .servicos-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
   .servicos-carousel-wrapper {
     position: relative;
     margin-left: -2.5rem;
@@ -343,7 +351,7 @@
 
   @media (max-width: 960px) {
     .servico-card { flex: 0 0 calc(50% - 1px); }
-    .servicos-header > div { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .servicos-header-row { flex-direction: column; align-items: flex-start; }
   }
   @media (max-width: 600px) { .servico-card { flex: 0 0 100%; } }
 </style>
@@ -352,7 +360,7 @@
   <div class="container">
     <div class="servicos-header">
       <div class="section-label">Serviços</div>
-      <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+      <div class="servicos-header-row">
         <h2 class="section-title">O que posso fazer pelo seu negócio</h2>
         <a href="#quiz" class="btn-quiz-header">Não sei qual serviço escolher</a>
       </div>

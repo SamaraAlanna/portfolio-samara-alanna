@@ -1,6 +1,7 @@
 <style>
   .hero-wrap {
     position: relative;
+    z-index: 1;
     min-height: 85vh;
     overflow: hidden;
     display: flex;
