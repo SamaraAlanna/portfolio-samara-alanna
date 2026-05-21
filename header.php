@@ -48,7 +48,7 @@
   }
 
   nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -56,7 +56,6 @@
     background: rgba(12,12,11,0.88);
     backdrop-filter: blur(14px);
     border-bottom: 0.5px solid var(--border);
-    position: relative;
   }
 
   .nav-inner {
@@ -168,8 +167,8 @@
 
   .nav-dropdown {
     display: none;
-    position: fixed;
-    top: 64px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background: rgba(12,12,11,0.97);
