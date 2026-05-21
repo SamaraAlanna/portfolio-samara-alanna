@@ -174,7 +174,6 @@
   .nav-dropdown {
     display: none;
     position: fixed;
-    top: 63px;
     left: 0;
     right: 0;
     z-index: 9998;
@@ -286,7 +285,11 @@
   function toggleMenu() {
     var btn = document.getElementById('menuBtn');
     var dropdown = document.getElementById('navDropdown');
+    var nav = document.querySelector('nav');
     btn.classList.toggle('open');
     dropdown.classList.toggle('open');
+    if (dropdown.classList.contains('open')) {
+      dropdown.style.top = nav.getBoundingClientRect().bottom + 'px';
+    }
   }
 </script>
