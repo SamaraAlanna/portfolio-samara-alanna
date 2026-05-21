@@ -432,7 +432,7 @@
             </div>
           </div>
           <h3>Landing Page</h3>
-          <p>Página focada em converter visitantes em clientes, com design estratégico, código otimizado e experiência pensada para resultados.</p>
+          <p>Página focada em converter visitantes em clientes, com design estratégico e código otimizado.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
