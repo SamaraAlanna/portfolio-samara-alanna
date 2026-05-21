@@ -306,7 +306,7 @@
           <div>
             <div class="servico-price-label">A partir de</div>
             <div class="servico-price">R$400</div>
-            <div class="servico-prazo">Prazo: <strong>7 a 14 dias úteis</strong></div>
+            <div class="servico-prazo">Prazo: <strong>10 a 14 dias úteis</strong></div>
           </div>
           <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
         </div>
@@ -335,7 +335,43 @@
           <div>
             <div class="servico-price-label">A partir de</div>
             <div class="servico-price">R$1.200</div>
-            <div class="servico-prazo">Prazo: <strong>7 a 10 dias úteis</strong></div>
+            <div class="servico-prazo">Prazo: <strong>15 a 20 dias úteis</strong></div>
+          </div>
+          <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
+        </div>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-icon">◉</div>
+        <h3>Loja virtual</h3>
+        <p>Uma Loja virtual ou E-commerce desenvolvido para oferecer uma experiência de compra simples, organizada e profissional, ajudando sua marca a vender online com mais credibilidade e praticidade.</p>
+        <div class="servico-includes">
+          <div class="servico-includes-label">O que está incluso</div>
+          <div class="include-item"><div class="include-dot"></div>Foco em Experiência do usuário e Design de Interface</div>
+          <div class="include-item"><div class="include-dot"></div>Design exclusivo</div>
+          <div class="include-item"><div class="include-dot"></div>Desenvolvimento inicia após a aprovação do layout do site.</div>
+          <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
+          <div class="include-item"><div class="include-dot"></div>Responsivo para celular e computador</div>
+          <div class="include-item"><div class="include-dot"></div>Página de produtos</div>
+          <div class="include-item"><div class="include-dot"></div>Carrinho de compras</div>
+          <div class="include-item"><div class="include-dot"></div>Checkout integrado</div>
+          <div class="include-item"><div class="include-dot"></div>Integração com meios de pagamento</div>
+          <div class="include-item"><div class="include-dot"></div>Área de gerenciamento de pedidos</div>
+          <div class="include-item"><div class="include-dot"></div>Cadastro de produtos e categorias</div>
+          <div class="include-item"><div class="include-dot"></div>Integração com WhatsApp e redes sociais</div>
+          <div class="include-item"><div class="include-dot"></div>Otimização básica de performance e SEO</div>
+          <div class="include-item"><div class="include-dot"></div>Páginas <span class="rosa">ilimitadas</span></div>
+          <div class="include-item"><div class="include-dot"></div>Revisões <span class="rosa">ilimitadas</span></div>
+          <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
+          <div class="include-item"><div class="include-dot"></div>Lojas</div>
+          <div class="include-item"><div class="include-dot"></div>Marcas</div>
+          <div class="include-item"><div class="include-dot"></div>Produtos digitais</div>
+        </div>
+        <div class="servico-footer">
+          <div>
+            <div class="servico-price-label">A partir de</div>
+            <div class="servico-price">R$4.000</div>
+            <div class="servico-prazo">Prazo: <strong>30 a 45 dias úteis</strong></div>
           </div>
           <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
         </div>
@@ -347,11 +383,15 @@
         <p>Um site completo, desenvolvido sob medida para o seu negócio, pensado para atender suas necessidades de forma estratégica, profissional e escalável.</p>
         <div class="servico-includes">
           <div class="servico-includes-label">O que está incluso</div>
-          <div class="include-item"><div class="include-dot"></div>Até 5 páginas personalizadas</div>
-          <div class="include-item"><div class="include-dot"></div>Design exclusivo no Figma</div>
+          <div class="include-item"><div class="include-dot"></div>Foco em Experiência do usuário e Design de Interface</div>
+          <div class="include-item"><div class="include-dot"></div>Design exclusivo</div>
+          <div class="include-item"><div class="include-dot"></div>Desenvolvimento inicia após a aprovação do layout do site.</div>
           <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
-          <div class="include-item"><div class="include-dot"></div>Responsivo para todos os dispositivos</div>
-          <div class="include-item"><div class="include-dot"></div>2 rodadas de ajustes inclusas</div>
+          <div class="include-item"><div class="include-dot"></div>Responsivo para celular e computador</div>
+          <div class="include-item"><div class="include-dot"></div>Integração com WhatsApp, formulários e redes sociais</div>
+          <div class="include-item"><div class="include-dot"></div>Otimização básica de performance e SEO</div>
+          <div class="include-item"><div class="include-dot"></div>Páginas <span class="rosa">ilimitadas</span></div>
+          <div class="include-item"><div class="include-dot"></div>Revisões <span class="rosa">ilimitadas</span></div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
           <div class="include-item"><div class="include-dot"></div>Marcas</div>
           <div class="include-item"><div class="include-dot"></div>Empresas</div>
@@ -361,8 +401,8 @@
         <div class="servico-footer">
           <div>
             <div class="servico-price-label">A partir de</div>
-            <div class="servico-price">R$2.500</div>
-            <div class="servico-prazo">Prazo: <strong>15 a 25 dias úteis</strong></div>
+            <div class="servico-price">R$6.000</div>
+            <div class="servico-prazo">Prazo: <strong>30 a 60 dias úteis</strong></div>
           </div>
           <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
         </div>
