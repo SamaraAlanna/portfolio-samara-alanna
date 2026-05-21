@@ -207,7 +207,12 @@
   }
 
   @media (hover: none) and (pointer: coarse) {
-    * {
+    *, *:hover, *:focus, *:active,
+    a, button, [onclick], [role="button"],
+    .quiz-option, .acc-trigger, .card-acc-trigger,
+    .faq-trigger, .carousel-btn, .btn-servico,
+    .btn-primary, .btn-ghost, .btn-cv, .btn-acc,
+    .nav-cta, .nav-menu-btn {
       cursor: auto !important;
     }
   }
