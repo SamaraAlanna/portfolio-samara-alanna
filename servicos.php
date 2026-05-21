@@ -4,6 +4,11 @@
     border-bottom: 0.5px solid var(--border);
   }
 
+  .servicos .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .servicos-header {
     margin-bottom: 3rem;
   }
@@ -17,13 +22,13 @@
   }
 
   .servicos-carousel-wrapper {
-    display: grid;
-    grid-template-columns: 44px 1fr 44px;
+    position: relative;
+    display: flex;
     align-items: center;
-    gap: 1rem;
   }
 
   .servicos-grid {
+    flex: 1;
     min-width: 0;
     display: flex;
     gap: 1px;
@@ -269,6 +274,22 @@
   .btn-servico:hover::before { animation: btnShimmer 0.55s cubic-bezier(.4,0,.2,1) forwards; }
 
   @keyframes btnShimmer { to { transform: skewX(-15deg) translateX(350%); } }
+
+  #srv-prev {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  #srv-next {
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
 
   .carousel-btn {
     background: var(--accent-dim);
