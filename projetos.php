@@ -110,10 +110,11 @@
     background: var(--accent-dim);
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
-    padding: 0.18rem 0.6rem;
+    padding: 0.25rem 0.85rem;
     font-size: var(--text-xs);
-    color: var(--text-muted);
-    letter-spacing: 0.03em;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: 0.04em;
   }
 
   .proj-num {

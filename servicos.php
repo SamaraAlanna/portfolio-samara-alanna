@@ -351,7 +351,7 @@
 
   @media (max-width: 960px) {
     .servico-card { flex: 0 0 calc(50% - 1px); }
-    .servicos-header-row { flex-direction: column; align-items: flex-start; }
+    .servicos-header-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
   }
   @media (max-width: 600px) { .servico-card { flex: 0 0 100%; } }
 </style>
@@ -362,9 +362,9 @@
       <div class="section-label">Serviços</div>
       <div class="servicos-header-row">
         <h2 class="section-title">O que posso fazer pelo seu negócio</h2>
-        <a href="#quiz" class="btn-quiz-header">Não sei qual serviço escolher</a>
       </div>
       <p>Cada projeto é desenvolvido de forma personalizada, pensando no visual, na experiência e no que realmente faz sentido para o seu negócio.</p>
+      <a href="#quiz" class="btn-quiz-header">Não sei qual serviço escolher</a>
     </div>
 
     <div class="servicos-carousel-wrapper">
