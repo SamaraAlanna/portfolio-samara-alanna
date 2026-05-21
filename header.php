@@ -56,6 +56,7 @@
     background: rgba(12,12,11,0.88);
     backdrop-filter: blur(14px);
     border-bottom: 0.5px solid var(--border);
+    overflow: hidden;
   }
 
   .nav-inner {
@@ -167,8 +168,8 @@
 
   .nav-dropdown {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 64px;
     left: 0;
     right: 0;
     background: rgba(12,12,11,0.97);
