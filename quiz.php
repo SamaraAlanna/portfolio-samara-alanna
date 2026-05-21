@@ -243,8 +243,8 @@
     <div class="quiz-inner">
       <div class="quiz-header">
         <div class="section-label">Quiz</div>
-        <h2 class="section-title">Não sabe qual serviço escolher?</h2>
-        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Responda 2 perguntas e descubra o ideal para você.</p>
+        <h2 class="section-title">Que tal uma ajudinha?</h2>
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Responda 2 perguntas e descubra o serviço ideal para você.</p>
       </div>
 
       <div class="quiz-progress">
