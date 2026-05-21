@@ -274,6 +274,12 @@
             </div>
             Loja virtual
           </button>
+          <button class="quiz-option" onclick="qAnswer(0, 'suporte')">
+            <div class="quiz-option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            Suporte para o meu site
+          </button>
         </div>
       </div>
 
@@ -351,6 +357,12 @@ var qServices = {
     name: 'Loja Virtual',
     price: 'A partir de R$4.000 · 30–45 dias úteis',
     desc: 'E-commerce completo para vender online com design estratégico, experiência de compra fluida e credibilidade.'
+  },
+  suporte: {
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+    name: 'Suporte Mensal',
+    price: 'R$400/mês · Contrato mensal renovável',
+    desc: 'Mantenha seu site sempre atualizado e funcionando. Atualizações, ajustes e correções sem preocupação.'
   }
 };
 
@@ -364,6 +376,8 @@ function qAnswer(step, value) {
   setTimeout(function() {
     if (step === 0 && value === 'marca') {
       qShowResult([qServices.marca], 'Encontramos o serviço ideal para você!', null);
+    } else if (step === 0 && value === 'suporte') {
+      qShowResult([qServices.suporte], 'Encontramos o serviço ideal para você!', null);
     } else if (step === 0) {
       qGoToStep(1);
     } else {
