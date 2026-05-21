@@ -95,7 +95,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
-    min-height: 280px;
+    height: 400px;
     transition: background 0.25s, box-shadow 0.25s;
     position: relative;
     overflow: hidden;
@@ -194,8 +194,14 @@
 
   .area-card:hover .tag { border-color: var(--accent-border); color: var(--accent); }
 
-  @media (max-width: 960px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 600px) { .areas-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 960px) {
+    .areas-grid { grid-template-columns: repeat(2, 1fr); }
+    .area-card { height: auto; min-height: 260px; }
+  }
+  @media (max-width: 600px) {
+    .areas-grid { grid-template-columns: 1fr; }
+    .area-card { height: auto; min-height: 0; }
+  }
 </style>
 
 <section class="sobre" id="sobre">
