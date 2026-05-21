@@ -466,7 +466,7 @@
             </div>
           </div>
           <h3>Identidade Visual</h3>
-          <p>Personalidade e consistência para sua marca em todos os pontos de contato com o público, fortalecendo seu posicionamento visual.</p>
+          <p>Personalidade para sua marca em todos os pontos de contato com o público, fortalecendo seu posicionamento visual.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
