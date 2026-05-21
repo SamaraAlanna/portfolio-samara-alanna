@@ -88,6 +88,7 @@
     border-radius: var(--radius);
     overflow: hidden;
     align-items: stretch;
+    grid-auto-rows: 1fr;
   }
 
   .area-card {
@@ -96,7 +97,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
-    min-height: 400px;
+    height: 100%;
     transition: background 0.25s, box-shadow 0.25s;
     position: relative;
     overflow: hidden;
@@ -171,7 +172,7 @@
     color: var(--text-muted);
     font-weight: 400;
     line-height: 1.65;
-    flex: 1;
+    flex-grow: 1;
   }
 
   .area-tags {
