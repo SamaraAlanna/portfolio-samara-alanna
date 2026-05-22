@@ -197,6 +197,13 @@
     body { padding-top: 64px; }
   }
 
+  @media (max-width: 960px) {
+    .nav-links a::after,
+    .nav-links a.active::after {
+      display: none !important;
+    }
+  }
+
 
 </style>
 
