@@ -4,14 +4,14 @@
     <div class="sobre-text">
       <div class="sobre-title-row">
         <h2 class="section-title">UX/UI Designer e Desenvolvedora Full Stack</h2>
+        <a href="#" class="btn-cv">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
       </div>
       <p>Olá, sou a Samara Alanna, fundadora do estúdio Borda Design. Sou especialista em UX/UI Design, identidade visual e desenvolvimento de sites. Atualmente curso Análise e Desenvolvimento de Sistemas e Design Gráfico, unindo a parte visual com a técnica para criar projetos mais completos.</p>
       <p>Hoje trabalho em uma agência como UX/UI Designer e Desenvolvedora Full Stack, atuando no setor automotivo e atendendo marcas reconhecidas como Mercedes-Benz, BMW, Nissan, Volkswagen Caminhões e Ônibus e Michelin.</p>
       <p>Uma das coisas que mais valorizo no meu trabalho é entregar projetos com qualidade, agilidade e atenção aos detalhes. Gosto de manter um processo próximo do cliente, tornando tudo mais leve, organizado e transparente durante o desenvolvimento.</p>
-      <a href="#" class="btn-cv">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download CV
-      </a>
     </div>
     <div class="areas-grid">
       <div class="area-card">
