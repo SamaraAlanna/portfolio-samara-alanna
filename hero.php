@@ -5,7 +5,7 @@
     <p class="hero-desc">Estúdio de design e desenvolvimento de sites. Crio sites bonitos, funcionais e responsivos, pensados para destacar sua marca na internet e funcionar perfeitamente em qualquer dispositivo. Além disso, você conta com suporte completo após o lançamento (a parte).</p>
     <div class="hero-actions">
       <a href="#servicos" class="btn-primary">Conhecer serviços</a>
-      <a href="#projetos" class="btn-ghost">Ver projetos</a>
+      <a href="#quiz" class="btn-ghost">Comece por aqui</a>
     </div>
   </section>
   <?php include 'marquee.php'; ?>
