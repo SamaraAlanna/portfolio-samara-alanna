@@ -378,6 +378,8 @@
     pointer-events: none;
     width: fit-content;
     margin: 0 auto 0.75rem auto;
+    position: relative;
+    z-index: 10;
   }
 
   @keyframes swipePulse {
@@ -386,7 +388,7 @@
   }
 
   @media (max-width: 960px) {
-    .swipe-hint { display: flex; }
+    .swipe-hint { display: flex !important; visibility: visible; opacity: 1; }
     .servicos-carousel-wrapper { position: relative; }
   }
 </style>
