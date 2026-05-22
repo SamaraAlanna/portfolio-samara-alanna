@@ -93,21 +93,8 @@
     position: relative;
     padding-bottom: 0.3rem;
   }
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--accent);
-    border-radius: 99px;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
   .nav-links a:hover { color: var(--accent); }
   .nav-links a.active { color: var(--text); }
-  .nav-links a.active::after { opacity: 1; }
 
   .nav-cta {
     background: var(--accent);
@@ -197,12 +184,6 @@
     body { padding-top: 64px; }
   }
 
-  @media (max-width: 960px) {
-    .nav-links a::after,
-    .nav-links a.active::after {
-      display: none !important;
-    }
-  }
 
 
 </style>
