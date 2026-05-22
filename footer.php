@@ -2,9 +2,9 @@
   <div class="footer-inner">
     <p class="footer-copy">© 2025 Samara Alanna.</p>
     <div class="footer-links">
-      <a href="#" target="_blank">Instagram</a>
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">Behance</a>
+      <a href="https://www.instagram.com/bordadesignn/" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/samaraalanna/" target="_blank">LinkedIn</a>
+      <a href="https://www.behance.net/samaraalanna" target="_blank">Behance</a>
       <a href="https://wa.me/5541920058670" target="_blank">WhatsApp</a>
     </div>
   </div>
