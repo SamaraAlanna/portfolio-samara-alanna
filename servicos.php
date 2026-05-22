@@ -68,6 +68,7 @@
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x pan-y;
+    scroll-snap-type: x mandatory;
     scrollbar-width: none;
   }
   .servicos-grid::-webkit-scrollbar { display: none; }
