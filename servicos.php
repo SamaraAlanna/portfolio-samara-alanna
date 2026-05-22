@@ -32,6 +32,7 @@
     text-decoration: none;
     white-space: nowrap;
     margin-top: 1.5rem;
+    display: inline-block;
     flex-shrink: 0;
     transition: opacity 0.2s;
   }
