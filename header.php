@@ -195,6 +195,7 @@
     .nav-menu-btn { display: flex; }
     .nav-cta { display: none; }
     body { padding-top: 64px; }
+    nav { border-bottom: none; }
   }
 
   @media (max-width: 960px) {
