@@ -142,7 +142,7 @@ function smoothScrollTo(target, duration, center) {
   /* ── Botão flutuante WhatsApp ── */
   var fab = document.createElement('a');
   fab.className = 'fab-wa';
-  fab.href = 'https://wa.me/5541920058670';
+  fab.href = 'https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20adoraria%20conversar!';
   fab.target = '_blank';
   fab.rel = 'noopener';
   fab.setAttribute('aria-label', 'Fale pelo WhatsApp');
