@@ -4,8 +4,8 @@
     <ul class="nav-links">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#servicos">Serviços</a></li>
       <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#servicos">Serviços</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
@@ -21,8 +21,8 @@
 <div class="nav-dropdown" id="navDropdown">
   <a href="#sobre" onclick="toggleMenu()">Sobre</a>
   <a href="#projetos" onclick="toggleMenu()">Projetos</a>
-  <a href="#servicos" onclick="toggleMenu()">Serviços</a>
   <a href="#quiz" onclick="toggleMenu()">Quiz</a>
+  <a href="#servicos" onclick="toggleMenu()">Serviços</a>
   <a href="#faq" onclick="toggleMenu()">FAQ</a>
   <a href="#contato" onclick="toggleMenu()">Contato</a>
 </div>
