@@ -179,7 +179,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
     font-family: var(--font);
     transition: background 0.2s;
   }
@@ -296,7 +295,6 @@
     transform: translateZ(0);
     transition: transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s;
     border: none;
-    cursor: pointer;
   }
   .btn-servico::before {
     content: '';
@@ -341,7 +339,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     font-size: var(--text-lg);
     flex-shrink: 0;
     align-self: center;

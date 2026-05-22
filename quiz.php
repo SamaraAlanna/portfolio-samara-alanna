@@ -63,7 +63,6 @@
     border: 0.5px solid var(--border);
     border-radius: var(--radius);
     padding: 1rem 1.25rem;
-    cursor: pointer;
     font-family: var(--font);
     font-size: var(--text-base);
     font-weight: 400;
@@ -198,7 +197,6 @@
     gap: 0.5rem;
     transition: opacity 0.2s, transform 0.2s;
     border: none;
-    cursor: pointer;
     width: 100%;
   }
   .btn-quiz-primary:hover { opacity: 0.85; transform: translateY(-1px); }
@@ -213,7 +211,6 @@
     font-size: var(--text-base);
     font-weight: 400;
     color: var(--text-muted);
-    cursor: pointer;
     transition: border-color 0.2s, color 0.2s;
     text-decoration: none;
     display: flex;
@@ -229,7 +226,6 @@
     font-family: var(--font);
     font-size: var(--text-sm);
     color: var(--text-dim);
-    cursor: pointer;
     text-align: center;
     padding: 0.5rem;
     transition: color 0.2s;

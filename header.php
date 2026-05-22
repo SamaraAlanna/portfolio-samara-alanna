@@ -1,10 +1,4 @@
 <style>
-  @media (hover: none) and (pointer: coarse) {
-    * { cursor: auto !important; }
-    *::before { cursor: auto !important; }
-    *::after { cursor: auto !important; }
-  }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -156,7 +150,6 @@
     display: none;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 0.25rem;
     color: var(--text);
     flex-direction: column;
@@ -204,26 +197,7 @@
     body { padding-top: 64px; }
   }
 
-  @media (max-width: 960px) {
-    * { cursor: default !important; }
-  }
 
-  @media (max-width: 960px) {
-    html, body, a, button, input, select, textarea, [role="button"] {
-      cursor: default !important;
-    }
-  }
-
-  @media (hover: none) and (pointer: coarse) {
-    *, *:hover, *:focus, *:active,
-    a, button, [onclick], [role="button"],
-    .quiz-option, .acc-trigger, .card-acc-trigger,
-    .faq-trigger, .carousel-btn, .btn-servico,
-    .btn-primary, .btn-ghost, .btn-cv, .btn-acc,
-    .nav-cta, .nav-menu-btn {
-      cursor: auto !important;
-    }
-  }
 </style>
 
 <nav>

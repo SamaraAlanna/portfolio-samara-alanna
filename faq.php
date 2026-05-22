@@ -42,7 +42,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
     font-family: var(--font);
     gap: 1rem;
     transition: background 0.2s;
