@@ -361,6 +361,36 @@
       display: inline-flex;
     }
   }
+
+  .swipe-hint {
+    display: none;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(230,183,211,0.12);
+    border: 0.5px solid var(--accent-border);
+    border-radius: 99px;
+    padding: 0.4rem 1rem;
+    font-size: var(--text-xs);
+    color: var(--accent);
+    gap: 0.4rem;
+    align-items: center;
+    white-space: nowrap;
+    animation: swipePulse 2s infinite;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  @keyframes swipePulse {
+    0%, 100% { opacity: 1; transform: translateX(-50%) translateX(0); }
+    50% { opacity: 0.6; transform: translateX(-50%) translateX(4px); }
+  }
+
+  @media (max-width: 960px) {
+    .swipe-hint { display: flex; }
+    .servicos-carousel-wrapper { position: relative; }
+  }
 </style>
 
 <section class="servicos" id="servicos">
@@ -377,6 +407,10 @@
     <div class="servicos-carousel-wrapper">
       <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
       <div class="servicos-grid">
+        <div class="swipe-hint" id="swipeHint">
+          <span>Deslize para ver mais</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
 
         <!-- SUPORTE MENSAL -->
         <div class="servico-card">
@@ -696,4 +730,9 @@ function toggleCard(btn) {
     grid.scrollBy({ left: card.offsetWidth + 1, behavior: 'smooth' });
   });
 })();
+
+document.querySelector('.servicos-grid').addEventListener('scroll', function() {
+  var hint = document.getElementById('swipeHint');
+  if (hint) hint.style.display = 'none';
+}, { once: true });
 </script>
