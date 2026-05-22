@@ -13,7 +13,7 @@
     <div class="projects-grid">
       <a class="project-card" href="https://www.behance.net/gallery/247374871/Miriam-Araujo-Psicologa-Identidade-Visual-2026" target="_blank">
         <div class="proj-img">
-          <img src="uploads/miriam-araujo.png" alt="Míriam Araújo Psicóloga" style="object-position: top center;" />
+          <img src="uploads/miriam-araujo.png" alt="Míriam Araújo Psicóloga" style="object-position: center 30%;" />
         </div>
         <div class="proj-content">
           <div class="proj-top"><span class="proj-tag">Identidade Visual</span><span class="proj-num">01</span></div>
