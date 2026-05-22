@@ -320,8 +320,15 @@
 function toggleCard(btn) {
   var body = btn.nextElementSibling;
   var isOpen = btn.classList.contains('open');
-  btn.classList.toggle('open', !isOpen);
-  body.classList.toggle('open', !isOpen);
+  var card = btn.closest('.servico-card');
+  card.querySelectorAll('.card-acc-trigger.open').forEach(function(b) {
+    b.classList.remove('open');
+    b.nextElementSibling.classList.remove('open');
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    body.classList.add('open');
+  }
 }
 
 (function() {
