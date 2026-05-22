@@ -1154,6 +1154,8 @@ nav {
   position: relative;
   overflow: hidden;
   -webkit-overflow-scrolling: auto;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
   transition: background 0.25s;
 }
 .servico-card:hover { background: var(--bg3); }
