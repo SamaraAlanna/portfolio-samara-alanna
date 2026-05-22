@@ -136,7 +136,7 @@
     font-size: 0.9rem;
     font-weight: 400;
     text-decoration: none;
-    border: 0.5px solid rgba(255,255,255,0.12);
+    border: 0.5px solid rgba(255,255,255,0.25);
     padding: 0.85rem 1.75rem;
     border-radius: 99px;
     position: relative;

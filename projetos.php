@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    border: 0.5px solid var(--border);
+    border: 0.5px solid var(--border-hover);
     padding: 0.5rem 1rem;
     border-radius: 99px;
     transition: color 0.2s, border-color 0.2s;
