@@ -364,10 +364,8 @@
 
   .swipe-hint {
     display: none;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin: 0.75rem auto 0;
     background: rgba(230,183,211,0.12);
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
@@ -388,7 +386,7 @@
   }
 
   @media (max-width: 960px) {
-    .swipe-hint { display: flex; }
+    .swipe-hint { display: flex; justify-content: center; }
     .servicos-carousel-wrapper { position: relative; }
   }
 </style>
@@ -407,10 +405,6 @@
     <div class="servicos-carousel-wrapper">
       <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
       <div class="servicos-grid">
-        <div class="swipe-hint" id="swipeHint">
-          <span>Deslize para ver mais</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </div>
 
         <!-- SUPORTE MENSAL -->
         <div class="servico-card">
@@ -705,6 +699,10 @@
           </div>
         </div>
 
+      </div>
+      <div class="swipe-hint" id="swipeHint">
+        <span>Deslize para ver mais</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </div>
       <button class="carousel-btn" id="srv-next" aria-label="Próximo">&#8594;</button>
     </div>
