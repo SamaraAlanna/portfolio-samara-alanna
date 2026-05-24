@@ -41,6 +41,37 @@
   --accent-border: rgba(196,121,154,0.25);
 }
 
+/* Header light */
+[data-theme="light"] nav { background: rgba(245,242,238,0.92) !important; }
+[data-theme="light"] .nav-logo { color: #1a1815 !important; }
+[data-theme="light"] .nav-links a { color: #9a9590 !important; }
+[data-theme="light"] .nav-links a:hover { color: #c4799a !important; }
+[data-theme="light"] .nav-links a.active { color: #1a1815 !important; }
+
+/* Hero light */
+[data-theme="light"] .hero h1 { color: #1a1815 !important; }
+[data-theme="light"] .hero-desc { color: #5a5550 !important; }
+[data-theme="light"] .hero-badge {
+  background: rgba(196,121,154,0.10) !important;
+  border: 0.5px solid rgba(196,121,154,0.30) !important;
+  color: #c4799a !important;
+}
+[data-theme="light"] .hero-badge::before { background: #c4799a !important; }
+[data-theme="light"] .hero-wrap::after {
+  background: radial-gradient(ellipse at center,
+    rgba(196,121,154,0.25) 0%,
+    rgba(196,121,154,0.10) 35%,
+    transparent 70%
+  ) !important;
+}
+
+/* Botão ghost light */
+[data-theme="light"] .btn-ghost {
+  color: #5a5550 !important;
+  border-color: rgba(26,24,21,0.25) !important;
+}
+[data-theme="light"] .btn-ghost:hover { color: #c4799a !important; border-color: rgba(196,121,154,0.4) !important; }
+
 /* ─── Base ─── */
 html {
   overflow-x: hidden;
