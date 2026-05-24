@@ -1243,7 +1243,7 @@ nav {
 }
 
 .card-acc {
-  border: 0.5px solid var(--accent-border);
+  border: 0.5px solid var(--accent-border) !important;
   border-radius: var(--radius-sm);
   overflow: hidden;
   margin-bottom: 0.5rem;
@@ -1255,7 +1255,7 @@ nav {
 
 .card-acc-trigger {
   width: 100%;
-  background: var(--accent-dim);
+  background: var(--accent-dim) !important;
   border: none;
   padding: 0.65rem 0.85rem;
   display: flex;
@@ -1274,7 +1274,7 @@ nav {
 .card-acc-label {
   font-size: var(--text-xs);
   font-weight: 500;
-  color: var(--accent);
+  color: var(--accent) !important;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -1283,7 +1283,7 @@ nav {
 .card-acc-chevron {
   width: 14px;
   height: 14px;
-  color: var(--accent);
+  color: var(--accent) !important;
   transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
   flex-shrink: 0;
 }
