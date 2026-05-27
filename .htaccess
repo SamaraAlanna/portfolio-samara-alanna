@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Forçar HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirecionar portfoliosamara.com.br para bordadesign.com.br
+RewriteCond %{HTTP_HOST} ^(www\.)?portfoliosamara\.com\.br$ [NC]
+RewriteRule ^(.*)$ https://bordadesign.com.br/$1 [L,R=301]
